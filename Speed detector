@@ -1,0 +1,21 @@
+let speed = prompt("Input Speed: ");
+let limit = 70;
+function speedDetector(){
+
+    let responce;
+    if(speed <= limit){
+        responce = "Ok";
+    }else{
+
+        let points = (speed - limit)/5;
+        if (points <12){
+            responce= Points: ${points};
+        } else{
+            responce = "License suspended";
+        }
+
+     }
+     return responce;
+
+    }
+    console.log(speedDetector());
