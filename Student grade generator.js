@@ -13,9 +13,9 @@ if (marks >79) {
 } else if (marks >= 40 && marks <= 49) {
     grade = "D";
 } else {
-    grade "E";
+    grade = "E";
 }
-return The grade is ${grade}
+return `The grade is ${grade}`
 }
 
 console.log(grader());

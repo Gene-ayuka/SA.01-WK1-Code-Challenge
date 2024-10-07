@@ -1,6 +1,8 @@
 let basicSalary = prompt("Basic Salary: ");
 let benefits = prompt("Benefits: ");
+
   // Calculate gross salary
+
 let grossSalary = basicSalary + benefits;
 function payee(){
     let pay;
@@ -18,6 +20,7 @@ function payee(){
     return pay;
 }
   // Calculate NHIF deductions
+
 function NHIF(){
     let nhif;
     if(grossSalary <= 5999){
@@ -57,15 +60,17 @@ function NHIF(){
     }
     return nhif;
 }
+
   // Calculate NSSF deductions
+
 function NSSF(){
     let nssf = 0.06 * grossSalary;
     return nssf;
 }
 
-let
-
 let PaYee = payee(), NhIf = NHIF(), NsSf = NSSF();
+
   // Calculate net salary
+
 let netSalary = grossSalary - (PaYee + NhIf + NsSf);
 console.log(netSalary)
